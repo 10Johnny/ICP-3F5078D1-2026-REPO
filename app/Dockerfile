@@ -23,7 +23,7 @@ COPY app.py .
 
 RUN chown -R appuser:appgroup /app /opt/venv
 
-USER appuser
+USER 1000
 
 ENV PATH="/opt/venv/bin:$PATH"
 
